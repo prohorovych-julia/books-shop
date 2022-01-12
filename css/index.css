@@ -1,4 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    font-family: 'Open Sans', sans-serif; 
+    --main-color: rgb(38, 38, 38);
+    --accent-color: rgb(128, 191, 255);
+}
+
+.container {
+    max-width: 980px;
+    margin: auto;
+}
+
+header nav {
+    background-color: var(--accent-color);
+}
+
+header .logo {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header nav .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .menu a {
+    color: var(--main-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+header nav .menu a:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+
+    header nav div.container {
+        display: flex;
+    }
+
+    header nav .menu {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 img {
